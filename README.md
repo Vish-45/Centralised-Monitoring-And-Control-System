@@ -86,11 +86,11 @@ One can choose which user to view(system or normal):
 
 - The **cischeck** command checks for the current status of CIS Compliance and Benchmarks of the client:
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
 
 - The **cisenable** command enables all the disabled CIS Compliance and Benchmarks:
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/11.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/11.PNG">
 
 - For more INformation on CIS Compliance and Benchmarks:
 Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
@@ -99,25 +99,27 @@ Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 - Starting Splunk Server(Listening):
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/1.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/1.PNG">
 
 - Running the **splunkenable** command and waiting for the splunk forwarder to get configured in the remote host:
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/12.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/12.PNG">
 
 - Completion of splunk forwarder configuration in the remote host(client) and connection to server established(debian):
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/13.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/13.PNG">
 
 - Completion of splunk forwarder configuration in the remote host(client) and connection to server established(Cent-OS):
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/14.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/14.PNG">
 
 
 - A user with knowledge of python can write his own functionalities that can be easily incorporated into the existing clients.
 
-- User can quit the script safely using the exit command and the clients will go to sleep for 100 sec.After which they will go back to the task of trying to connect back to the mothership.So when the person starts the mothership again his clients will connect back again.
-- For reconnaissance the client table provides the user with ip port and operating system of the client so that user can use the correct shell commands.
+- User can quit the script safely using the exit command and the clients will go to sleep for 100 sec.After which they will go back to the task of trying to connect back to the MotherShip.So when the person starts the mothership again his clients will connect back again:
+
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/15.PNG">
+
 
 # HOW TO INSTALL
 ----
