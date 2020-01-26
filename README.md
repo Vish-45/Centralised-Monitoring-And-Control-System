@@ -24,14 +24,26 @@ splunkenable.py **To start splunk-forwarder on remote clients to monitor their l
 >This has been made public that anyone can contribute to this project.
 
 
+# REQUIREMENTS
+----
+The Program has been made and tested to work on Centos7 and DEBIAN 9
+
+
+
+
 # FEATURES
 ----
-- The Server can interact with one client while the MotherNode is still listening for incoming connection from other clients.
+- The Server can interact with one client while it is still listening for incoming connection from other clients.
 - A low level client server model that does not trigger antivirus or firewalls.
 - New connections are appended to a table that can be used later.
 - The client script(agent) provides feature of persistence on platforms like centos or debian(adding a cronjob in crontab.)
 - The script copies itself into the admin folder in the home directory and autoruns on reboot so that it works even if the original file is deleted by user.
 - It **works over wan also** provided there is an ip connectivity between the MotherNode and the client.
+- CIS Benchmarks that are applicable for the remote host can be listed and applied remotely.
+- Splunk Forwarder can be configured on the remote host.
+- Os,Memory and cpu statistics of the remote host can be monitored
+- List of Users (privileged and non-privileged ) present on the remote system can be viewed.
+- Files can be transferred to and fro between server and client.
 - Some commands that can be run on the clients are :-
 
 
@@ -82,7 +94,7 @@ One can choose which user to view(system or normal):
 
 **grab**:
 
-<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/8.PNG">
 
 - The **cischeck** command checks for the current status of CIS Compliance and Benchmarks of the client:
 
@@ -116,7 +128,7 @@ Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 - A user with knowledge of python can write his own functionalities that can be easily incorporated into the existing clients.
 
-- User can quit the script safely using the exit command and the clients will go to sleep for 100 sec.After which they will go back to the task of trying to connect back to the MotherShip.So when the person starts the mothership again his clients will connect back again:
+- User can quit the script safely using the exit command and the clients will go to sleep for 10 sec.After which they will go back to the task of trying to connect back to the MotherShip.So when the person starts the mothernode again his clients will connect back again:
 
 <img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/15.PNG">
 
@@ -131,24 +143,25 @@ git clone https://github.com/Vish-45/Centralised-Monitoring-And-Control-System.g
 
 To launch the MotherNode go to the installed folder and type
 ```python
-python server.py <ip address> <port>
+python3 server.py <ip address> <port>
 ```
 THE IP ADDRESS MUST BE YOUR LOCAL IP IF YOU WANT TO USE IN LAN.
 TO USE IN WAN USE YOUR GLOBAL IP WITH APPROPRIATE PORT FORWARDING ON THE ROUTER.
 refer
 https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router
->NOTE for best results use the MotherNode on Kali linux .however it will work on any system with python installed.
+
 
 ## CLIENT
->NOTE agent is by the name of client.py don't rename it to anything other than putty.(required for the persistence functionality
-
+>NOTE agent is by the name of client.py
 - Open the client.py file using any text editor
 - Edit the IP and port fields to the IP and port you used above
 - Save the file.
+- copy the complete client folder to the remote host you wish to administer
+- run the client script as root.
+```python
+python3 client.py
+```
 
-### TO ADMINISTER ON MAC OSX
-For now it is a little tricky but our team is working on simplifying it.
-The simplest thing you can do right now ,provided the system has python installed is run the script in .py format on the mac system. it will automatically copy itself to the Documents folder and make a cronjob for it to run on every reboot so u don't have to run it  again.
 
 
 
