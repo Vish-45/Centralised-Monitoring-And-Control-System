@@ -11,10 +11,15 @@ A framework purely in python.
 Centralised Monitoring And Control System(CMCS) is the combination of a remote host handler(MotherNode) and a script(agent) purely written in python that can make other computers slave (client) of the MotherNode.The server script is named server.py and the client script must be administered on remote systems(clients).
 The server provides the functionality of simultaneously handling and listening for multiple incoming socket connections.
 The code base consists of four client side codes namely
+
 ciscontrols.py **This is for checking few CIS compliance benchmarks.**
+
 client.py **The Client-Side code to initiate a reverse TCP connection**
+
 dependencyclient.sh **A bash script to check all the required dependencies(binaries) are installed or not**
+
 splunkenable.py **To start splunk-forwarder on remote clients to monitor their logs in Splunk-UI**
+
 >This has been made public that anyone can contribute to this project.
 
 
