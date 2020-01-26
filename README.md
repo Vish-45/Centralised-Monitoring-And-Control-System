@@ -52,6 +52,7 @@ splunkenable.py **To start splunk-forwarder on remote clients to monitor their l
 |     splunkenable  | enable splunk forwarder on remote host                 |
   
   
+
 - The help command(for e.g.) outputs:
 
 <img width="280" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/17.PNG">
