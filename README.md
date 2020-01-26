@@ -72,7 +72,7 @@ The Program has been made and tested to work on Centos7 and DEBIAN 9
 
 - The showclients command outputs:
 
-<img width="500" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/3.PNG">
+<img width="600" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/3.PNG">
 
 - The status command is used to view the system-information of the connected clients:
 
