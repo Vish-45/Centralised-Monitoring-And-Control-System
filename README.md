@@ -8,7 +8,7 @@ A framework purely in python.
 # INTRODUCTION
 ----
 
-Centralised Monitoring And Control System(CMCS) is the combination of a remote host handler(MotherNode) and a script(agent) purely written in python that can make other computers slave (client) of the MotherNode.The server script is named server.py and the client script must be administered on remote systems(clients).
+Centralised Monitoring And Control System(CMCS) is the combination of a remote host handler(MotherNode) and a script(client) purely written in python that can make other computers slave (clients) of the MotherNode.The server script is named server.py and the client script must be administered on remote systems(clients).
 The server provides the functionality of simultaneously handling and listening for multiple incoming socket connections.
 The code base consists of four client side codes namely:
 
