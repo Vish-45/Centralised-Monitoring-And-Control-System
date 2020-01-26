@@ -12,7 +12,7 @@ Centralised Monitoring And Control System(CMCS) is the combination of a remote h
 The server provides the functionality of simultaneously handling and listening for multiple incoming socket connections.
 The code base consists of four client side codes namely:
 
-ciscontrols.py **This is for checking few CIS compliance benchmarks.**
+ciscontrols.py **This is for checking few CIS Compliance And Benchmarks.**
 
 client.py **The Client-Side code to initiate a reverse TCP connection**
 
@@ -79,6 +79,40 @@ One can choose which user to view(system or normal):
 
 <img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/7.PNG">
 
+**grab**:
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
+
+- The **cischeck** command checks for the current status of CIS Compliance and Benchmarks of the client:
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
+
+- The **cisenable** command enables all the disabled CIS Compliance and Benchmarks:
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/11.PNG">
+
+- For more INformation on CIS Compliance and Benchmarks:
+Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
+
+- The **splunkenable** command installs and configures splunk to forward system logs to our splunk server:
+
+- Starting Splunk Server(Listening):
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/1.PNG">
+
+- Running the **splunkenable** command and waiting for the splunk forwarder to get configured in the remote host:
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/12.PNG">
+
+- Completion of splunk forwarder configuration in the remote host(client) and connection to server established(debian):
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/13.PNG">
+
+- Completion of splunk forwarder configuration in the remote host(client) and connection to server established(Cent-OS):
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/14.PNG">
+
+
 - A user with knowledge of python can write his own functionalities that can be easily incorporated into the existing clients.
 
 - User can quit the script safely using the exit command and the clients will go to sleep for 100 sec.After which they will go back to the task of trying to connect back to the mothership.So when the person starts the mothership again his clients will connect back again.
@@ -100,7 +134,7 @@ THE IP ADDRESS MUST BE YOUR LOCAL IP IF YOU WANT TO USE IN LAN.
 TO USE IN WAN USE YOUR GLOBAL IP WITH APPROPRIATE PORT FORWARDING ON THE ROUTER.
 refer
 https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router
->NOTE for best results use the mothership on Kali linux .however it will work on any system with python installed.
+>NOTE for best results use the MotherNode on Kali linux .however it will work on any system with python installed.
 
 ## AGENT
 >NOTE agent is by the name of client.py don't rename it to anything other than putty.(required for the persistence functionality
