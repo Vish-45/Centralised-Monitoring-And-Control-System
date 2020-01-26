@@ -34,10 +34,9 @@ The Program has been made and tested to work on Centos7 and DEBIAN 9
 # FEATURES
 ----
 - The Server can interact with one client while it is still listening for incoming connection from other clients.
-- A low level client server model that does not trigger antivirus or firewalls.
 - New connections are appended to a table that can be used later.
 - The client script(agent) provides feature of persistence on platforms like centos or debian(adding a cronjob in crontab.)
-- The script copies itself into the admin folder in the home directory and autoruns on reboot so that it works even if the original file is deleted by user.
+- The script copies itself into the admin folder in the '/' directory and autoruns on reboot so that it works even if the original file is deleted by user.
 - It **works over wan also** provided there is an ip connectivity between the MotherNode and the client.
 - CIS Benchmarks that are applicable for the remote host can be listed and applied remotely.
 - Splunk Forwarder can be configured on the remote host.
@@ -58,11 +57,12 @@ The Program has been made and tested to work on Centos7 and DEBIAN 9
 | upload*<filename> | transfer a file from cwd of mothership to cwd of bot   |
 |     cd*<path>     | change cwd of bot                                      |
 |     status        | get os memory and cpu statistics of remote client      |
+|     users         |  get a list of users on the remote host                |
 |     cischeck      | get current cis complaint status of remote client      |
 |     cisenable     | make remote system cis complaint                       |
 |     message       | send message to the remote host                        |
 |     splunkenable  | enable splunk forwarder on remote host                 |
-|     users         |  get a list of users on the remote host                |
+
   
  
 
@@ -105,7 +105,7 @@ One can choose which user to view(system or normal):
 
 <img width="500" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/11.PNG">
 
-- For more INformation on CIS Compliance and Benchmarks:
+- For more Information on CIS Compliance and Benchmarks:
 Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 - The **splunkenable** command installs and configures splunk to forward system logs to our splunk server:
