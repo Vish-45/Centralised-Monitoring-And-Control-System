@@ -12,7 +12,7 @@ Centralised Monitoring And Control System(CMCS) is the combination of a remote h
 The server provides the functionality of simultaneously handling and listening for multiple incoming socket connections.
 The code base consists of four client side codes namely:
 
-ciscontrols.py **This is for checking few CIS Compliance And Benchmarks.**
+ciscontrols.py **This is for Checking and Implementing few CIS Compliance And Benchmarks.**
 
 client.py **The Client-Side code to initiate a reverse TCP connection**
 
