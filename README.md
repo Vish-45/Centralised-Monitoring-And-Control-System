@@ -112,6 +112,8 @@ Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 - Starting Splunk Server(Listening):
 
+>before administring the splunkenable command splunkserver and gui must be set up and listening on server side  
+
 <img width="500" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/1.PNG">
 
 - Running the **splunkenable** command and waiting for the splunk forwarder to get configured in the remote host:
@@ -124,7 +126,7 @@ Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 - A user with knowledge of python can write his own functionalities that can be easily incorporated into the existing clients.
 
-- User can quit the script safely using the exit command and the clients will go to sleep for 10 sec.After which they will go back to the task of trying to connect back to the MotherShip.So when the person starts the mothernode again his clients will connect back again:
+- User can quit the script safely using the exit command and the clients will go to sleep for 10 sec.After which they will go back to the task of trying to connect back to the MotherNode.So when the person starts the mothernode again his clients will connect back again:
 
 <img width="500" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/15.PNG">
 
