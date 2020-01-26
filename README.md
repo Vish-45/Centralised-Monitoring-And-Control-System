@@ -76,7 +76,8 @@ One can choose which user to view(system or normal):
 - Few more examples of other commands:
 
 **cd**:
-<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/7.PNG">
+
+<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/7.PNG">
 
 - A user with knowledge of python can write his own functionalities that can be easily incorporated into the existing clients.
 
