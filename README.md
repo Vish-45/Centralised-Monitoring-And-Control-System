@@ -120,7 +120,7 @@ Follow the link: https://www.rapid7.com/solutions/compliance/cis-benchmarks/
 
 # HOW TO INSTALL
 ----
-## MOTHERSHIP
+## MOTHERNODE
 - To install just open the terminal and type:
 ```sh 
 git clone https://github.com/Vish-45/Centralised-Monitoring-And-Control-System.git
@@ -136,7 +136,7 @@ refer
 https://www.wikihow.com/Set-Up-Port-Forwarding-on-a-Router
 >NOTE for best results use the MotherNode on Kali linux .however it will work on any system with python installed.
 
-## AGENT
+## CLIENT
 >NOTE agent is by the name of client.py don't rename it to anything other than putty.(required for the persistence functionality
 
 - Open the client.py file using any text editor
