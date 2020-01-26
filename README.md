@@ -82,7 +82,7 @@ One can choose which user to view(system or normal):
 
 **grab**:
 
-<img width="200" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
+<img width="300" alt="screen shot 2017-11-26 at 8 31 44 am" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/10.PNG">
 
 - The **cischeck** command checks for the current status of CIS Compliance and Benchmarks of the client:
 
