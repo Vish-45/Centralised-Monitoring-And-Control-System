@@ -1,4 +1,4 @@
-# Centralised Monitoring And Control System 
+# Centralized Monitoring And Control System 
 A centralised server to manage and monitor remote clients.
 A framework purely in python.
 
