@@ -1,5 +1,5 @@
 # Centralized Monitoring And Control System 
-A centralised server to manage and monitor remote clients.
+A centralized server to manage and monitor remote clients.
 A framework purely in python.
 
 <img width="600" alt="logo" src="https://raw.githubusercontent.com/Vish-45/Centralised-Monitoring-And-Control-System/master/snaps/2.PNG">
